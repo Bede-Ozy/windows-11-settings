@@ -11,12 +11,13 @@
     <title>Windows 11 Settings</title>
 
     <style>
-        @media(min-width:370px) and (max-width:720px){
+        @media(min-width:320px) and (max-width:720px){
 
             .container-main{
                 display:flex;
                 flex-direction: column;
                 gap:20px;
+                overflow: scroll;
             }
 
             .header{
@@ -59,8 +60,13 @@
                 width:100%;
             }
 
+            .search-icon-box{
+                left:82%;
+            }
+
             .settings-container{
                 width:100%;
+                height:100vh;
                 margin:0 auto;
                 display:grid ;
                 grid-template-columns: 2fr 2fr;
@@ -105,6 +111,10 @@
         } */
 
         @media(min-width:721px) and (max-width:1000px){
+
+            .container-main{
+                overflow:scroll;
+            }
             .user-section{
                 width:90%;
                 gap:10px;
@@ -124,6 +134,7 @@
             }
 
             .settings-container{
+                height:80vh;
                 padding-bottom:30px;
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: 1fr 1fr 1fr 1fr;
