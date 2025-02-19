@@ -50,6 +50,10 @@
     gap:15px;
 }
 
+.user-details a{
+    text-transform: capitalize;
+}
+
 .dp{
     width:100px;
     height:100px;
@@ -117,9 +121,13 @@
     border:2px solid black;
 }
 
-#search-bar:focus{
+input[type="search"]:focus{
     border:2px solid var(--ThisBlue);
-    box-shadow: none;
+    box-shadow: 0 0 10px gray;
+}
+
+.search-icon-box:hover{
+    cursor:pointer;
 }
 
 .search-icon-box{
@@ -141,6 +149,7 @@
 .settings-card-link{
     display:block;
     text-decoration: none;
+    min-width:100px;
     line-height: 17px;
     transition:all .2s ease-out; 
     cursor:default; /*This resets the anchor tag cirsor from pointer to the default cursor as an arrow*/

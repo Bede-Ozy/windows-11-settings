@@ -9,6 +9,134 @@
 <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
     <title>Windows 11 Settings</title>
+
+    <style>
+        @media(min-width:370px) and (max-width:720px){
+
+            .container-main{
+                display:flex;
+                flex-direction: column;
+                gap:20px;
+            }
+
+            .header{
+                height:fit-content;
+                padding:30px 0;
+            }
+
+            .open-account{
+                text-align: center;
+            }
+            .open-account h2, .open-account p{
+                margin-bottom: 15px;
+            }
+            
+
+            .user-section{
+                flex-direction: column;
+                padding:30px 0;
+            }
+
+            .user-account{
+                width:100%;
+                height:200px;
+            }
+
+            .dp{
+                width:70px;
+                height:70px;
+            }
+            .dp *{
+                width:50px;
+            }
+
+            .user-details{
+                font-size:smaller;
+                line-height: 15px;
+            }
+
+            .settings-card-link{
+                width:100%;
+            }
+
+            .settings-container{
+                width:100%;
+                margin:0 auto;
+                display:grid ;
+                grid-template-columns: 2fr 2fr;
+                grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+            }
+
+            .settings-card{
+                width:stretch;
+                flex-direction: column;
+                justify-content: space-between;
+                gap:20px;
+                padding:0;
+            }
+            .settings-desc{
+                height:80%;
+            }
+            /* .settings-icon{
+                height:20%;
+                width:100%;
+                justify-self: start;
+            } */
+
+            /* .settings-icon *{
+                width:100%;
+                height:100%;
+            } */
+        }
+
+        /* @media(max-width:420px){
+            .settings-card-link{
+                width:100%;
+                text-align: center;
+                padding:10px;
+            }
+
+            .settings-container{
+                display:grid;
+            }
+        } */
+
+        @media(min-width:721px) and (max-width:1000px){
+            .user-section{
+                width:90%;
+                gap:10px;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .user-account{
+                width:50%;
+                padding:0 10px;
+            }
+
+            .open-account{
+                padding:0 30px;
+            }
+            .search-icon-box{
+                left:65%;
+            }
+
+            .settings-container{
+                padding-bottom:30px;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+            }
+        }
+
+        @media(min-width:1001px) and (max-width:1200px){
+            .user-account{
+                width:30%;
+            }
+
+            .open-account{
+                width:65%;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container-main">
@@ -43,7 +171,7 @@
 
         <div class="settings-menu">
             <div class="search">
-                <input type="search" name="searchBar" id="search-bar">
+                <input type="search" name="searchBar" id="search-bar" placeholder="find a setting">
                 <div class="search-icon-box">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path></svg>
                 </div>
